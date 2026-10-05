@@ -3,10 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hc diagnostic</title>
+    <title>Laboratorio Clínico BioVida | Análisis de Alta Precisión</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Iconos Phosphor (vía CDN para iconos vectoriales limpios sin JS) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
- <h1>Hc Diagnostic</h1> 
+
+    <!-- NAV BAR -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="ph-bold ph-first-aid-kit logo-icon"></i>
+                <span>BioVida<small>Lab</small></span>
+            </a>
+            
+            <!-- Hack Checkbox para menú móvil sin JS -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#instalaciones">Tecnología</a>
+                <a href="https://wa.me/51999999999?text=Hola,%20quisiera%20consultar%20sobre%20sus%20servicios" target="_blank" class="btn-whatsapp-nav">
+                    <i class="ph-bold ph-whatsapp-logo"></i> Consultar por WhatsApp
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="badge">
+                    <i class="ph-bold ph-shield-check"></i> Resultados 100% Confiables
+                </span>
+                <h1>Diagnósticos de alta precisión para tu tranquilidad</h1>
+                <p>Equipamiento biomédico de última generación y profesionales altamente cualificados al servicio de tu salud.</p>
+                
+                <div class="hero-buttons">
+                    <a href="https://wa.me/51999999999?text=Hola,%20deseo%20agendar%20una%20cita%20o%20consultar%20precios" target="_blank" class="btn-primary">
+                        <i class="ph-bold ph-whatsapp-logo"></i> Agendar por WhatsApp
+                        <span class="glow-effect"></span>
+                    </a>
+                    <a href="#servicios" class="btn-secondary">
+                        Ver Exámenes <i class="ph-bold ph-arrow-down"></i>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">+15</span>
+                        <span class="stat-desc">Años de experiencia</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-num">99.8%</span>
+                        <span class="stat-desc">Precisión de análisis</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-num">24h</span>
+                        <span class="stat-desc">Entrega de resultados</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="card-glass main-card">
+                    <div class="pulse-ring"></div>
+                    <i class="ph-duotone ph-dna dna-icon"></i>
+                    <h3>Tecnología Molecular</h3>
+                    <p>Procesamiento automatizado sin margen de error humano.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Servicios Clínicos</h2>
+                <p>Cubrimos una amplia gama de pruebas con la tecnología más avanzada de la región.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Tarjeta 1 -->
+                <div class="service-card">
+                    <div class="icon-wrapper">
+                        <i class="ph-duotone ph-drop"></i>
+                    </div>
+                    <h3>Hematología Completa</h3>
+                    <p>Análisis integral de sangre, recuento hemático completo, coagulación y despistaje de anemias o infecciones.</p>
+                    <a href="https://wa.me/51999999999?text=Hola,%20deseo%20información%20sobre%20Hematología" class="card-link" target="_blank">
+                        Consultar costo <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="service-card featured">
+                    <div class="badge-featured">Popular</div>
+                    <div class="icon-wrapper">
+                        <i class="ph-duotone ph-flask"></i>
+                    </div>
+                    <h3>Bioquímica Clínica</h3>
+                    <p>Perfiles lipídicos, glucosa, perfil renal, hepático y electrolitos para un chequeo de rutina preventivo.</p>
+                    <a href="https://wa.me/51999999999?text=Hola,%20deseo%20información%20sobre%20Bioquímica" class="card-link" target="_blank">
+                        Consultar costo <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="service-card">
+                    <div class="icon-wrapper">
+                        <i class="ph-duotone ph-virus"></i>
+                    </div>
+                    <h3>Microbiología e Inmunología</h3>
+                    <p>Cultivos, antibiogramas, pruebas de alergias, serología y análisis inmunológicos especializados.</p>
+                    <a href="https://wa.me/51999999999?text=Hola,%20deseo%20información%20sobre%20Microbiología" class="card-link" target="_blank">
+                        Consultar costo <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="service-card">
+                    <div class="icon-wrapper">
+                        <i class="ph-duotone ph-house-line"></i>
+                    </div>
+                    <h3>Toma de Muestras a Domicilio</h3>
+                    <p>Llevamos nuestro equipo hasta la puerta de tu hogar con total seguridad y puntualidad.</p>
+                    <a href="https://wa.me/51999999999?text=Hola,%20deseo%20agendar%20toma%20de%20muestra%20a%20domicilio" class="card-link" target="_blank">
+                        Agendar domicilio <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POR QUÉ ELEGIRNOS (NOSOTROS) -->
+    <section id="nosotros" class="why-us">
+        <div class="container why-grid">
+            <div class="why-image-wrapper">
+                <div class="floating-badge top">
+                    <i class="ph-bold ph-check-circle"></i> ISO 9001 Certificados
+                </div>
+                <div class="image-box">
+                    <!-- Ilustración abstracta mediante CSS pura -->
+                    <div class="lab-graphic">
+                        <div class="bubble b1"></div>
+                        <div class="bubble b2"></div>
+                        <div class="bubble b3"></div>
+                        <i class="ph-duotone ph-microscope lab-icon"></i>
+                    </div>
+                </div>
+                <div class="floating-badge bottom">
+                    <i class="ph-bold ph-clock-afternoon"></i> Resultados Urgentes en 3h
+                </div>
+            </div>
+
+            <div class="why-content">
+                <h2>¿Por qué confiar en Laboratorio BioVida?</h2>
+                <p>Entendemos que detrás de cada muestra hay un paciente buscando respuestas. Nos enfocamos en darte rapidez, calidez humana y una precisión milimétrica.</p>
+
+                <ul class="features-list">
+                    <li>
+                        <div class="feat-icon"><i class="ph-bold ph-check"></i></div>
+                        <div>
+                            <h4>Resultados Digitales Seguros</h4>
+                            <p>Recibe tu informe directamente en tu correo o WhatsApp en formato PDF encriptado.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feat-icon"><i class="ph-bold ph-check"></i></div>
+                        <div>
+                            <h4>Personal Especializado</h4>
+                            <p>Tecnólogos médicos y biólogos colegiados con constante capacitación internacional.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feat-icon"><i class="ph-bold ph-check"></i></div>
+                        <div>
+                            <h4>Control de Calidad Estricto</h4>
+                            <p>Evaluaciones diarias e interlaboratoriales para certificar cada análisis.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER DE CONTACTO VÍA WHATSAPP -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2>¿Tienes alguna duda o necesitas un presupuesto?</h2>
+                    <p>Atención directa con nuestro equipo médico. Respuestas inmediatas a todas tus consultas.</p>
+                </div>
+                <div class="cta-action">
+                    <a href="https://wa.me/51999999999?text=Hola,%20quisiera%20hacer%20una%20consulta" target="_blank" class="btn-whatsapp-large">
+                        <i class="ph-bold ph-whatsapp-logo"></i>
+                        <span>Escríbenos al WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <i class="ph-bold ph-first-aid-kit logo-icon"></i>
+                    <span>BioVida<small>Lab</small></span>
+                </a>
+                <p>Comprometidos con la salud y bienestar de nuestra comunidad mediante análisis clínicos de vanguardia.</p>
+            </div>
+            
+            <div class="footer-info">
+                <h4>Horarios de Atención</h4>
+                <p><i class="ph-bold ph-clock"></i> Lun - Vie: 6:30 AM - 7:00 PM</p>
+                <p><i class="ph-bold ph-clock"></i> Sábados: 7:00 AM - 2:00 PM</p>
+            </div>
+
+            <div class="footer-info">
+                <h4>Ubicación</h4>
+                <p><i class="ph-bold ph-map-pin"></i> Av. Salud y Ciencia 456, Centro Médico</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Laboratorio Clínico BioVida. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE PERMANENTE DE WHATSAPP CON PULSO -->
+    <a href="https://wa.me/51999999999?text=Hola,%20quisiera%20más%20información" target="_blank" class="whatsapp-float" aria-label="Contacto por WhatsApp">
+        <i class="ph-bold ph-whatsapp-logo"></i>
+        <span class="tooltip">¿Necesitas ayuda? ¡Escríbenos!</span>
+    </a>
+
 </body>
 </html>
